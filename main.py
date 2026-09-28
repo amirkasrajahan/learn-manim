@@ -36,3 +36,15 @@ class SquareUpToCircle(Scene):
         circle.next_to(square, UP, 0.5)
 
         self.play(Create(circle), Create(square))
+
+class SquareToCircleAnimation(Scene):
+    def construct(self):
+        circle = Circle()
+        square = Square()
+
+        self.play(Create(square))
+        self.play(square.animate.rotate(PI / 4))
+        self.play(Transform(square, circle))
+        self.play(
+            circle.animate.set_fill(RED, opacity=0.5)
+        )
