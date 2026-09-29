@@ -1,1 +1,4 @@
 partial_movie_files
+venv/
+__pycache__/
+media/
