@@ -3,7 +3,7 @@ from manim import *
 class BinarySearch(Scene):
     def construct(self):
         values = [1,3,7,12,15,17,19]
-        target = 7
+        target = 12
         min = 0
         max = len(values) - 1
         mid = max // 2
@@ -37,13 +37,13 @@ class BinarySearch(Scene):
             elif target > values[mid]:
                 min = mid + 1
                 mid = (min + max) // 2
-            else:
-                cells[mid].set_fill(GREEN, 0.3)
-                break
 
             self.play(
                 minText.animate.next_to(cells[min], DOWN),
                 maxText.animate.next_to(cells[max], DOWN),
                 midText.animate.next_to(cells[mid], DOWN),
             )
+        self.play(cells[mid][0].animate.set_fill(GREEN, 0.5), run_time=0.3)
+
+        self.wait(3)
 
