@@ -9,7 +9,9 @@ class LinearSearch(Scene):
         title = Text("Linear Search", font_size=40).to_edge(UP)
         target_label = Text(f"target = {target}", font_size=28, color=YELLOW)
         target_label.next_to(title, DOWN, buff=0.3)
-        self.play(Write(title), Write(target_label))
+        complexity_label = Text("Time Complexity: O(n)", font_size=28)
+        complexity_label.to_edge(DOWN)
+        self.play(Write(title), Write(target_label), Write(complexity_label))
 
         cells = VGroup(*[
             VGroup(Square(side_length=1), Text(str(v), font_size=36))
