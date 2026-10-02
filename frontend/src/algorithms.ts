@@ -10,14 +10,14 @@ export const algorithms: Algorithm[] = [
   {
     id: 'linear-search',
     name: 'Linear Search',
-    video: '/videos/LinearSearch.mp4',
+    video: 'videos/LinearSearch.mp4',
     complexity: 'O(n)',
     description: 'Checks each element in order until the target is found.',
   },
   {
     id: 'binary-search',
     name: 'Binary Search',
-    video: '/videos/BinarySearch.mp4',
+    video: 'videos/BinarySearch.mp4',
     complexity: 'O(log n)',
     description: 'Halves a sorted array each step by comparing against the middle.',
   },
