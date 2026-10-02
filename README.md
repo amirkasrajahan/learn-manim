@@ -17,6 +17,17 @@ pip install -r requirements.txt
 
 Also requires `cairo`, `pkg-config`, and `ffmpeg` on the system (macOS: `brew install cairo pkg-config ffmpeg`).
 
+## Frontend
+
+`frontend/` is a React + TypeScript (Vite) app with a dropdown that plays the rendered videos.
+
+```bash
+./render.sh                 # render all scenes into frontend/public/videos/
+cd frontend && npm install && npm run dev
+```
+
+To add an algorithm: write the scene in `algorithms/`, add a line to `SCENES` in `render.sh`, and add an entry to `frontend/src/algorithms.ts`.
+
 ## Rendering a scene
 
 ```bash
