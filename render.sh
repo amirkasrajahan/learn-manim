@@ -14,6 +14,7 @@ mkdir -p "$OUT"
 SCENES=(
   "algorithms/linear_search.py LinearSearch"
   "algorithms/binary_search.py BinarySearch"
+  "algorithms/bubble_sort.py BubbleSort"
 )
 
 for entry in "${SCENES[@]}"; do

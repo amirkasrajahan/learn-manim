@@ -21,4 +21,11 @@ export const algorithms: Algorithm[] = [
     complexity: 'O(log n)',
     description: 'Halves a sorted array each step by comparing against the middle.',
   },
+  {
+    id: 'bubble-sort',
+    name: 'Bubble Sort',
+    video: 'videos/BubbleSort.mp4',
+    complexity: 'O(n²)',
+    description: 'Repeatedly swaps adjacent out-of-order pairs so the largest values bubble to the end.',
+  },
 ]
